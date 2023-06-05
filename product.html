@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Nosotros - Embutidos Cobolde</title>
+        <title>Productos - Embutidos Cobolde</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
     
     <body>
         
-       <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,11 +57,11 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Nosotros</a>
+                            <a class="nav-link" href="about.html">Nosotros</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">Productos</a>
+                            <a class="nav-link active" href="#">Productos</a>
                         </li>
 
                         <li class="nav-item">
@@ -89,12 +89,12 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
         <main>
 
-            <header class="site-header site-about-header">
+            <header class="site-header site-product-header">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-10 col-12 mx-auto">
-                            <h1 class="text-white">Quienes <span class="text-danger">somos</span></h1>
+                            <h1 class="text-white">Nuestros <span class="text-danger">Productos</span></h1>
 
                             <strong class="text-white">Descubre cómo revolucionamos la cocina brindandote lo mejor</strong>
                         </div>
@@ -105,28 +105,195 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 <div class="overlay"></div>
             </header>
 
-            <section class="about section-padding">
+            <section class="product section-padding-small">
                 <div class="container">
                     <div class="row">
+                        <div  class="col-12 col-lg-12">
+                            <div class="d-flex">
 
-                        <div class="col-lg-6 col-12 col-md-12 mb-2 justify-content-start justify-content-lg-start justify-content-md-center">
-                            <h4 class="mb-3 text-start text-md-center text-lg-start text-sm-center"><span class="text-danger">COBOLDE</span> tradición y calidad 
-                                en cada bocado.</h4>
-                            <div class="d-flex justify-content-start justify-content-lg-start justify-content-md-center">
-                                <a href="news.html" class="custom-btn btn btn-dark my-3">Productos</a>
-                                <a href="contact.html" class="custom-btn btn btn-danger my-3 ms-3">Salúdanos</a>
+                                <input id="stext-search" class="form-control input-search" placeholder="Nombre..." required="">
+                                <button class="btn-search" id="btn-search">Buscar</button>
+                            </div>
+                        </div>
+        
+
+                    </div>
+                    <div class="row section-padding-small">
+                        <div  class="col-12 col-lg-12">
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <button class="btn-category" id="btn-search">Todos</button>
+                                <button class="btn-category-secondary" id="btn-search">Categoria 1</button>
+                                <button class="btn-category-secondary" id="btn-search">Categoria 2</button>
+                                <button class="btn-category-secondary" id="btn-search">Categoria 3</button>
+                                <button class="btn-category-secondary" id="btn-search">Categoria 4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section-padding-small">
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative">
+                                    <img src="img/products/choripan.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Choripan</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative">
+                                    <img src="img/products/jamon.jpg" class="img-fluid  news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Jamon</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative">
+                                    <img src="img/products/lomo.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Lomo Ahumado</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12">
-                        
-                        	<p>
-                                ¡Bienvenidos a Cobolde en Sucre! Somos la tienda de embutidos de alta calidad que estabas buscando. Con una amplia selección de sabores auténticos y un servicio personalizado excepcional, te invitamos a descubrir la excelencia en cada bocado. Ven y déjate sorprender por nuestra variedad de embutidos y vive una experiencia inolvidable en Cobolde. <strong>¡Te esperamos con los mejores sabores y atención en Sucre!</strong></p>
-                        
-                            <p>Nuestro compromiso es brindarte una experiencia única, donde podrás disfrutar de una amplia variedad de sabores auténticos y deleitarte con la excelencia en cada detalle. Ven a Cobolde y descubre por qué somos la elección favorita de los amantes de los embutidos en Sucre.</p>
-
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative ">
+                                    <img src="img/products/mortadela.jpg" class="img-fluid  news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Mortadela</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative overflow-hidden">
+                                    <img src="img/products/parrillera.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Hamburguesa Parrillera</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative overflow-hidden">
+                                    <img src="img/products/pasta.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Pasta de Cerdo</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative overflow-hidden">
+                                    <img src="img/products/peperoni.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Peperoni</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative overflow-hidden">
+                                    <img src="img/products/salchicha.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Salchicha Viena</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="product-item">
+                                <a class="position-relative overflow-hidden">
+                                    <img src="img/products/tocino.jpg" class="img-fluid news-image" alt="">
+                                    <strong class="text-danger position-absolute top-0 end-0 m-2 bg-white p-2 rounded">Bs. 12.00</strong>
+                                </a>
+                                <div class="px-4 py-2">
+                                    <h4>Tocino</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolorum.</p>
+                                    <div class="d-flex justify-content-between">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="row">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center fw-bold">
+                              <li class="page-item disabled">
+                                <a class="page-link bg-danger text-white">Atras</a>
+                              </li>
+                              <li class="page-item"><a class="page-link text-danger" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link text-danger" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link  bg-danger text-white" href="#">Siguiente</a>
+                              </li>
+                            </ul>
+                          </nav>
                     </div>
                 </div>
             </section>
@@ -175,33 +342,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </div>
             </section> -->
             
-            <section class="newsletter section-padding bg-white">
-                <div class="container">
-                    <div class="row">
 
-                        <div class="col-lg-6 col-12">
-                            <img src="img/contact.jpg" class="img-fluid newsletter-image" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12 d-flex align-items-center mt-5 mt-lg-0 mx-auto">
-                            <div class="subscribe-form-wrap">
-                                <h4 class="mb-0">Mandanos un Mensaje</h4>
-
-                                <p>y DISFRUTA
-                                    como más TE GUSTE</p>
-
-                                <form class="custom-form subscribe-form mt-4" role="form">
-                                    <input type="email" name="subscribe-email" id="subscribe-email" class="form-control" placeholder="Mensaje..." required="">
-
-                                    <button type="submit" class="form-control mb-3" id="subscribe">Enviar</button>
-                                    
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
 
         </main>
 
