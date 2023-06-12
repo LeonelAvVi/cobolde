@@ -1207,6 +1207,147 @@ banner
   .song-direction{
     flex-direction: column !important;
   }
+  #loading-text {
+    display: inline-block;
+    font-size: 16px;
+  }
+  #preloader-content p {
+    font-size: 24px !important;
+  }
 
 }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/patters.png), center center; 
+  background-size: cover;
+  z-index: 9999;
+}
+
+#preloader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#preloader-content img {
+  width: 250px;
+  height: 250px;
+}
+
+#preloader-content p {
+  font-size: 32px;
+  margin-top: 32px;
+  font-weight: 700;
+  color: #f44749;
+}
+
+#preloader-content .loading-text {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#preloader-content .loading-text.show {
+  opacity: 1;
+}
+
+
+
+@keyframes rotateAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#preloader-content .loading-icon {
+  animation: rotateAnimation 2s infinite linear;
+}
+
+
+@keyframes animateCharacter {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#loading-text {
+  display: inline-block;
+  font-size: 24px;
+}
+
+#loading-text span {
+  display: inline-block;
+  animation: animateCharacter 2s infinite;
+}
+
+#loading-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#loading-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+#loading-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+#loading-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+#loading-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+#loading-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+#loading-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+#loading-text span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+#loading-text span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+#loading-text span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+#loading-text span:nth-child(11) {
+  animation-delay: 1s;
+}
+/* Repite para los demás caracteres */
 
