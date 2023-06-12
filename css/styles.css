@@ -1223,7 +1223,7 @@ banner
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/patters.png), center center; 
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/patters.jpg), center center; 
   background-size: cover;
   z-index: 9999;
 }
