@@ -31,41 +31,63 @@ Tooplate 2129 Beef Club
     </head>
     
     <body>
-        
+        <div id="preloader">
+            <div id="preloader-content">
+                <img src="../img/logo.png" alt="Cargando..." class="loading-icon">
+                <p id="loading-text" class="loading-text">
+                    <span>C</span>
+                    <span>a</span>
+                    <span>r</span>
+                    <span>g</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>d</span>
+                    <span>o</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </p>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg bg-white shadow-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" class="img-fluid logo" alt="">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="../img/logo.png" class="img-fluid logo" alt="">
                 </a>
 
                 <div class="d-lg-none">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+                    <button type="button" class="custom-btn btn btn-danger" 
+                    onclick="window.open('https://api.whatsapp.com/send?phone=59171164644&text=Hola%20quisiera%20hacer%20un%20pedido%20de%20embutidos%20Cobolde', '_blank')"
+                >
+                    <i class="bi-whatsapp reviews-icon"></i>
+                    Contactar
+                </button>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Inicio</a>
+                            <a class="nav-link active" href="/index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="/about.html">Nosotros</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="/product.html">Productos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Recetas</a>
+                            <a class="nav-link" href="/recipes.html">Recetas</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contactos</a>
+                            <a class="nav-link" href="/contact.html">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -240,13 +262,6 @@ poco más saludable que la original, ¡esta receta con COBOLDE, te irá genial!
 
         <!-- Modal -->
  
-
-        <div id="preloader">
-            <div id="preloader-content">
-                <img src="ruta-del-icono-de-carga.png" alt="Cargando...">
-                <p>Cargando...</p>
-            </div>
-        </div>
         <script>
             window.addEventListener('load', function() {
             var preloader = document.getElementById('preloader');
