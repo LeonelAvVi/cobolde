@@ -194,8 +194,8 @@ a:hover {
 }
 
 .btn-category-secondary{
-  background-color: var(--white-color);
-  color: var(--primary-color);
+  background-color: var(--bg-dark-color);
+  color: var(--white-color);
   border: solid 2px var(--primary-color);
   padding: 12px 32px 12px 32px;
   border-radius: 999px;
