@@ -18,6 +18,7 @@ https://www.tooplate.com/view/2129-crispy-kitchen
   --dark-color:                   #000000;
   --title-color:                  #565758;
   --news-title-color:             #292828;
+  --bg-dark-color:                #292828;
   --p-color:                      #717275;
   --border-color:                 #eaeaea;
   --border-radius-default:        .25rem;
@@ -195,7 +196,7 @@ a:hover {
 .btn-category-secondary{
   background-color: var(--white-color);
   color: var(--primary-color);
-  border: solid 1px var(--primary-color);
+  border: solid 2px var(--primary-color);
   padding: 12px 32px 12px 32px;
   border-radius: 999px;
   font-weight: 600;
@@ -215,6 +216,7 @@ strong {
   color: var(--white-color);
   font-size: var(--menu-font-size);
   padding: 10px 35px;
+  font-weight: bold;
 }
 
 
@@ -222,9 +224,12 @@ strong {
   NAVIGATION              
 -----------------------------------------*/
 .navbar {
-  background: var(--white-color);
+  background: var(--bg-dark-color);
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.bg-dark-color {
+  background-color: var(--bg-dark-color) !important;
 }
 
 .navbar-brand {
@@ -243,7 +248,7 @@ strong {
 }
 
 .navbar-expand-lg .nav-link {
-  color: var(--p-color);
+  color: var(--white-color);
   font-weight: var(--font-weight-normal);
   font-size: var(--menu-font-size);
   padding-top: 15px;
@@ -925,10 +930,7 @@ banner
   FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../img/footer.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: var(--bg-dark-color);
   padding-top: 7rem;
   padding-bottom: 7rem;
   position: relative;
@@ -973,6 +975,12 @@ banner
 
 .site-footer p {
 	color: #AAA;
+}
+
+.site-footer h4 {
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
 
@@ -1093,6 +1101,10 @@ banner
 
 .song-direction{
   flex-direction: row !important;
+}
+
+.text-primary{
+  color: var(--primary-color) !important;
 }
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1223,7 +1235,7 @@ banner
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/patters.jpg), center center; 
+  background:#292828;
   background-size: cover;
   z-index: 9999;
 }
