@@ -42,9 +42,15 @@ https://www.tooplate.com/view/2129-crispy-kitchen
   --font-weight-bold:             700;
 }
 
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-VariableFont_wght.ttf") format("truetype");
+}
+
 body {
     background: var(--white-color);
-    font-family: var(--body-font-family);    
+    /* font-family: var(--body-font-family);     */
+    font-family: "Dosis", sans-serif;
     position: relative;
 }
 
@@ -196,7 +202,7 @@ a:hover {
 .btn-category-secondary{
   background-color: var(--bg-dark-color);
   color: var(--white-color);
-  border: solid 2px var(--primary-color);
+  border: solid 2px var(--white-color);
   padding: 12px 32px 12px 32px;
   border-radius: 999px;
   font-weight: 600;
